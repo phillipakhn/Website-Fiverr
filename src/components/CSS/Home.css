@@ -1,0 +1,36 @@
+/* CSS for Home.js */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background color */
+  color: #343a40; /* Dark text color */
+}
+
+.home-title {
+  font-size: 2.5em;
+  color: #007bff; /* Blue title color */
+  margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.home-description {
+  font-size: 1.2em;
+  text-align: center; /* Center-align the paragraph text */
+  max-width: 600px; /* Set a maximum width for better readability */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2em; /* Adjust the title font size for smaller screens */
+  }
+
+  .home-description {
+    font-size: 1em; /* Adjust the description font size for smaller screens */
+    max-width: 100%; /* Allow full width on smaller screens */
+    padding: 0 20px; /* Add some padding on the sides for better readability */
+  }
+}

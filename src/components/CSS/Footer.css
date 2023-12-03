@@ -1,0 +1,32 @@
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .footer {
+    position: static; /* Make the footer static on small screens */
+    width: 100%;
+  }
+}
+
+/* Additional responsiveness for zooming */
+@media screen and (max-width: 767px) {
+  .footer {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Additional responsiveness for smaller screens and higher zoom levels */
+@media screen and (max-width: 400px), (max-width: 600px) and (max-height: 700px) {
+  .footer {
+    padding: 5px; /* Adjust padding for smaller screens and higher zoom levels */
+  }
+}
